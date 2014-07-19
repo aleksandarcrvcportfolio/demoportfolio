@@ -35,6 +35,12 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -86,12 +92,18 @@
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App.config" />
+    <Content Include="App.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Portfolio.Domain\Portfolio.Domain.csproj">
+      <Project>{eac5e28b-6718-49be-b537-89b493acbcf0}</Project>
+      <Name>Portfolio.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Portfolio.WebUI\Portfolio.WebUI.csproj">
       <Project>{4D5F2E1F-2226-4B14-A0F3-8E8023036A8A}</Project>
       <Name>Portfolio.WebUI</Name>

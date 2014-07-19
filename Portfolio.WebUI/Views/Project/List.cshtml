@@ -1,0 +1,12 @@
+﻿@model System.Linq.IQueryable<Portfolio.Domain.Entities.Project>
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+    }
+</ul>

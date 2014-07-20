@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Portfolio.Domain.Concrete;
 using Portfolio.Domain.Entities;
 using Portfolio.Domain.Abstract;
 
@@ -29,13 +30,7 @@ namespace Portfolio.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            var mock = new Mock<IProjectRepository>();
-            mock.Setup(m => m.Products).Returns(new List<Project> {
-                new Project { Name = "Sample mvc", Category = "MVC" },
-                new Project { Name = "Sample sharepoint", Category = "Sharepoint" },
-                new Project { Name = "Sample WPF", Category = "WPF" }
-                }.AsQueryable());
-            ninjectKernel.Bind<IProjectRepository>().ToConstant(mock.Object);
+            ninjectKernel.Bind<IProjectRepository>().To<EFProjectRepository>();
         }
     }
 }

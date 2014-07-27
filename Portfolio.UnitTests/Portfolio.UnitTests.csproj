@@ -96,17 +96,17 @@
     <Content Include="App.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\boot.js" />
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\console.js" />
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\jasmine-html.js" />
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\jasmine.css" />
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\jasmine.js" />
-    <Content Include="Controllers\Jasmine\lib\jasmine-2.0.1\jasmine_favicon.png" />
-    <Content Include="Controllers\Jasmine\SpecRunner.html" />
-    <Content Include="Controllers\Jasmine\spec\PlayerSpec.js" />
-    <Content Include="Controllers\Jasmine\spec\SpecHelper.js" />
-    <Content Include="Controllers\Jasmine\src\Player.js" />
-    <Content Include="Controllers\Jasmine\src\Song.js" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\boot.js" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\console.js" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\jasmine-html.js" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\jasmine.css" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\jasmine.js" />
+    <Content Include="Jasmine\lib\jasmine-2.0.1\jasmine_favicon.png" />
+    <Content Include="Jasmine\SpecRunner.html" />
+    <Content Include="Jasmine\spec\PlayerSpec.js" />
+    <Content Include="Jasmine\spec\SpecHelper.js" />
+    <Content Include="Jasmine\src\Player.js" />
+    <Content Include="Jasmine\src\Song.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

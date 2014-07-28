@@ -16,7 +16,7 @@ namespace Portfolio.WebUI.Controllers
             return View();
         }
 
-        public ActionResult Coact123()
+        public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
